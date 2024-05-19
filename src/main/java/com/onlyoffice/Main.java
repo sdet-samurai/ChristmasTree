@@ -36,7 +36,7 @@ public class Main {
             stars += 4;
             if (current % 2 == 0) {
                 writer.write(" ".repeat((levels - current) * 4));
-                writer.write("@" + "* ".repeat(stars) + "\n");
+                writer.write("@" + "* ".repeat(stars - 1) + "*" + "\n");
             } else {
                 writer.write(" ".repeat((levels - current) * 4 + 1));
                 writer.write("* ".repeat(stars - 1) + "*@\n");
@@ -58,7 +58,7 @@ public class Main {
             stars += 4;
             if (current % 2 == 0) {
                 writer.write(" ".repeat((levels - current) * 4 - 1));
-                writer.write("@" + "* ".repeat(stars) + "\n");
+                writer.write("@" + "* ".repeat(stars - 1) + "*" + "\n");
             } else {
                 writer.write(" ".repeat((levels - current) * 4));
                 writer.write("* ".repeat(stars - 1) + "*@\n");
