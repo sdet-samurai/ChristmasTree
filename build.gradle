@@ -18,12 +18,6 @@ application {
     mainClass = 'com.onlyoffice.Main'
 }
 
-
 test {
     useJUnitPlatform()
-//    testLogging {
-//        events "passed", "skipped", "failed"
-//        exceptionFormat "full" // Показывает полные стектрейсы исключений
-//        showStandardStreams = true // Показывает вывод стандартных потоков (System.out и System.err)
-//    }
 }

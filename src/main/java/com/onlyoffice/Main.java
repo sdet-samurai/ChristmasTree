@@ -7,7 +7,7 @@ import java.io.Writer;
 
 public class Main {
     public static void main(String[] args) {
-        int levels = 5;
+        int levels = Integer.parseInt(new AppConfig("config.properties").getProperty("levels"));
         String outputPath = "output/output.txt";
 
         try {
